@@ -31,7 +31,7 @@ $ ./bin/instance fg
 
 ## Creating a addon package in src
 
-In the example, the package is called my.package and is located on github.com:myaccount/my.package.git
+In the example, the package is called my.package and is located on the filesystem.
 
 ```bash
 $ ./bin/instance stop
@@ -43,7 +43,7 @@ $ ../bin/mrbob -O my.addon bobtemplates:plone_addon
 
 ## Including the package
 
-In the example, the package is called my.package and is located on github.com:myaccount/my.package.git
+In the example, the package is called my.package and is located on the filesystem.
 
 ```bash
 $ cd ..
@@ -64,7 +64,7 @@ eggs +=
     my.package
 
 [sources]
-my.package = git git@github.com:myaccount/my.package.git
+my.package = fs my.package path=src
 ```
 
 ```bash

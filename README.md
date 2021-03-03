@@ -39,7 +39,9 @@ $ mkdir src
 $ cd src
 $ ../bin/mrbob -O my.addon bobtemplates:plone_addon
  ```
-- Choose 'Basic'
+- Choose 'Basic' and answer the questions.
+
+Now you can customize your addon in minimalplone4mrbob/src/minimalplone4mrbob
 
 ## Including the package
 

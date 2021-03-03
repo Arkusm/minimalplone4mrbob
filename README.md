@@ -41,11 +41,11 @@ $ ../bin/mrbob -O my.addon bobtemplates:plone_addon
  ```
 - Choose 'Basic' and answer the questions.
 
-Now you can customize your addon in minimalplone4mrbob/src/minimalplone4mrbob
+Now you can customize your addon in minimalplone4mrbob/src/my.package
 
 ## Including the package
 
-In the example, the package is called my.package and is located on the filesystem.
+To use the addon it must be included.
 
 ```bash
 $ cd ..

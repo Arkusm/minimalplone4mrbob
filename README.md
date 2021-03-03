@@ -47,7 +47,7 @@ In the example, the package is called my.package and is located on the filesyste
 
 ```bash
 $ cd ..
-$ vi dev.cfg
+$ vi dev.cfg  # For editing you can also use another editor than vi
 ```
 ```bash
 [buildout]
@@ -70,3 +70,16 @@ my.package = fs my.package path=src
 ```bash
 $ ./bin/buildout -c dev.cfg
 ```
+
+
+## Quick-installing the product
+
+Start Plone again
+
+```bash
+$ ./bin/instance start
+ ```
+
+Back in the Plone configuration (or Plone control panel), when you visit the “Add/Remove Products” interface or the portal_quickinstaller tool through the ZMI (at the root of the site), you can see the product show up under the category of “installable products”.
+
+Select and click the button to install the product. If everything goes fine, the product should be installed, and you’re ready to start using it!

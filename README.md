@@ -1,5 +1,5 @@
 # minimalplone4mrbob
-This is a minimal buildout configuration for installing the latest Plone 4 and bobtemplates.kitconcept. This buildout uses mr.developer to manage package development. You can use it to create and test addons (third party products) for the latest plone 4 version
+This is a minimal buildout configuration for installing the latest dexterity based Plone 4 and bobtemplates.kitconcept. This buildout uses mr.developer to manage package development. You can use it to create and test addons (third party products) for the latest plone 4 version
 
 ## Prerequisites
 

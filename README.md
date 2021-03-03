@@ -35,9 +35,8 @@ In the example, the package is called my.package and is located on the filesyste
 
 ```bash
 $ ./bin/instance stop
-$ mkdir src
 $ cd src
-$ ../bin/mrbob -O my.addon bobtemplates:plone_addon
+$ ../bin/mrbob -O my.package bobtemplates:plone_addon
  ```
 - Choose 'Basic' and answer the questions.
 

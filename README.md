@@ -28,3 +28,45 @@ $ ./bin/instance fg
  
  - Point your webbrowser to http://localhost:6080 (username admin, password
   admin) and install a Plone instance.
+
+## Creating a addon package in src
+
+In the example, the package is called my.package and is located on github.com:myaccount/my.package.git
+
+```bash
+$ ./bin/instance stop
+$ mkdir src
+$ cd src
+$ ../bin/mrbob -O my.addon bobtemplates:plone_addon
+ ```
+- Choose 'Basic'
+
+## Including the package
+
+In the example, the package is called my.package and is located on github.com:myaccount/my.package.git
+
+```bash
+$ cd ..
+$ vi dev.cfg
+```
+```bash
+[buildout]
+extends = buildout.cfg
+
+auto-checkout +=
+    my.package
+
+test-eggs +=
+    my.package [test]
+
+[instance]
+eggs +=
+    my.package
+
+[sources]
+my.package = git git@github.com:myaccount/my.package.git
+```
+
+```bash
+$ ./bin/buildout -c dev.cfg
+```

@@ -42,7 +42,7 @@ $ ../bin/mrbob -O my.package bobtemplates:plone_addon
 
 Now you can customize your addon in minimalplone4mrbob/src/my.package
 
-## Including the package
+### Including the package
 
 To use the addon it must be included.
 
@@ -73,7 +73,7 @@ $ ./bin/buildout -c dev.cfg
 ```
 
 
-## Quick-installing the product
+### Quick-installing the product
 
 Start Plone again
 
